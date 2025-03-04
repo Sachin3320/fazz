@@ -23,6 +23,12 @@ const userSchema = mongoose.Schema(
       enum: ["user", "admin"],  
       default: "user",
     },
+    EmailVerification: {
+      type: String,
+      enum: ['pending', 'active', 'inactive'],
+      default: 'pending',
+    },
+   
 
    
   },

@@ -8,7 +8,7 @@ import nodemailer, { createTransport } from 'nodemailer'
         secure: true,
         auth: {
             user: "saching@pearlorganisation.com",
-            pass:  "pbwf wnin zyzr qiox"
+            pass:  "scoc qtvm djdo ygqq"
         }
     })
 
@@ -17,8 +17,8 @@ import nodemailer, { createTransport } from 'nodemailer'
             from: '"fazz" <faz@gmail.com>', 
             to:email, 
             subject: "Email Verification",
-            message:`{ Your otp for Email Verification is ${otp} }`,
-            html: "<b>Hello world?</b>", 
+            text:` Your otp for Email Verification is ${otp} `,
+            
           });
           console.log("Message sent:", info);
 
