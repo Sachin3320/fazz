@@ -7,8 +7,8 @@ import nodemailer, { createTransport } from 'nodemailer'
         port: 465,
         secure: true,
         auth: {
-            user: "saching@pearlorganisation.com",
-            pass:  "scoc qtvm djdo ygqq"
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS
         }
     })
 
